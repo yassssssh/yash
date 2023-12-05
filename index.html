@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>YASHMUSIC</title>
+</head>
+<body>
+    <header>
+        <div class="logo">YASHMUSIC</div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Podcast</li>
+                <li>Library</li>
+            </ul>
+        </nav>
+        <div class="search-user">
+            <input type="text" placeholder="Search">
+            <div class="user-icon">👤</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="latest-playlist">
+            <h2>Latest Playlist</h2>
+            <!-- Update song URLs as needed -->
+            <div class="playlist-box box-1" onclick="playSong('Kahani suno.mp3')"></div>
+            <div class="playlist-box box-2" onclick="playSong('Hamari Adhuri Kahani.mp3')"></div>
+            <div class="playlist-box box-3" onclick="playSong('ishq Wala Love.mp3')"></div>
+            <div class="playlist-box box-4" onclick="playSong('Satranga.mp3')"></div>
+            <div class="playlist-box box-5" onclick="playSong('Sanam Teri Kasam.mp3')"></div>
+            <div class="playlist-box box-6" onclick="playSong('Khamoshiyan.mp3')"></div>
+        </section>
+
+        <section class="top-artists">
+            <h2>Top Artists</h2>
+            <!-- Update artist and song URLs as needed -->
+            <div class="artist-box box-7" onclick="playSong('artist1.mp3')">
+                <div class="artist-info">
+                    <p>Pritam</p>
+                </div>
+            </div>
+            <div class="artist-box box-8" onclick="playSong('artist2.mp3')">
+                <div class="artist-info">
+                    <p>Arijit Singh</p>
+                </div>
+            </div>
+            <div class="artist-box box-9" onclick="playSong('artist3.mp3')">
+                <div class="artist-info">
+                    <p>Asees Kaur</p>
+                </div>
+            </div>
+            <div class="artist-box box-10" onclick="playSong('artist4.mp3')">
+                <div class="artist-info">
+                    <p>Atif Aslam</p>
+                </div>
+            </div>
+            <div class="artist-box box-11" onclick="playSong('artist5.mp3')">
+                <div class="artist-info">
+                    <p>Kalesh Khair</p>
+                </div>
+            </div>
+            <div class="artist-box box-12" onclick="playSong('artist6.mp3')">
+                <div class="artist-info">
+                    <p>Jasleen Royal</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section class="latest-playlist">
+            <h2>Most Played Songs</h2>
+            <!-- Update song URLs as needed -->
+            <div class="playlist-box box-5" onclick="playSong('Sanam Teri Kasam.mp3')"></div>
+            <div class="playlist-box box-1" onclick="playSong('Kahani suno.mp3')"></div>
+            <div class="playlist-box box-3" onclick="playSong('ishq Wala Love.mp3')"></div>
+            <div class="playlist-box box-2" onclick="playSong('Hamari Adhuri Kahani.mp3')"></div>
+            <div class="playlist-box box-4" onclick="playSong('Satranga.mp3')"></div>
+            <div class="playlist-box box-5" onclick="playSong('Sanam Teri Kasam.mp3')"></div>
+        </section>
+        <main>
+            <section>
+                <div class="footerlast"></div>
+            </section>
+        </main>
+
+    <footer>
+        <div class="music-info">
+            <p><span id="currentSong">No song playing</span></p>
+        </div>
+        <div id="timeline-container">
+            <input type="range" id="timeline" min="0" max="100" step="0.1" value="0">
+        </div>
+        
+    </div>
+        <div class="music-controls">
+            <button id="prevBtn" onclick="prevSong()"><i class="fas fa-step-backward"></i></button>
+            <button id="playPauseBtn" onclick="togglePlayPause()"><i class="fas fa-play"></i></button>
+            <button id="nextBtn" onclick="nextSong()"><i class="fas fa-step-forward"></i></button>
+
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
